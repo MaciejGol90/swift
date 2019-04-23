@@ -1,3 +1,5 @@
 import Cocoa
-var numberOfStopLights: Int = 4
-numberOfStopLights += 2
+let numberOfStopLights: Int = 4
+var population : Int
+population = 5422
+
