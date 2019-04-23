@@ -3,5 +3,6 @@
     <pages>
         <page name='Virable'/>
         <page name='Conditionals'/>
+        <page name='Numbers'/>
     </pages>
 </playground>
