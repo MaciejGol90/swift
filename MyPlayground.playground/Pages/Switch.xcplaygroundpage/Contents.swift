@@ -104,5 +104,5 @@ default:
 print(error)
  let age = 25
 if case 18...35 = age{
-    print("Doskonały zakres demograficzny")
+     print("Doskonały zakres demograficzny")
 }
