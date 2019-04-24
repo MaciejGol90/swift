@@ -64,7 +64,7 @@ import Cocoa
 //print(errorString)
 
 
-var statusCode: Int = 204
+var statusCode: Int = 303
 var errorString: String = "Żądanie zakończyło się niepowodzeniem z podowu: "
 switch statusCode {
 case 100, 101:
@@ -77,9 +77,28 @@ case 400...417:
     errorString += " Błąd po stronie klienta, \(statusCode)."
 case 500...505:
     errorString += " Błąd po stronie serwera, \(statusCode)"
-case let unkownCode where (unkownCode >= 200 && unkownCode < 300) || unkownCode > 505:
+case let unkownCode where (unkownCode >= 200 && unkownCode < 300) || unkownCode > 500:
     errorString = "\(unkownCode) to jest nieznany kod błędu"
 default:
     errorString = "Wystąpił nieoczekiwany błąd"
 }
-print(errorString)
+let error  = (code: statusCode, error: errorString)
+error.code
+error.error
+
+let firstErrorCode = 404
+let secondErrorCode = 200
+let errorCodes = (firstErrorCode, secondErrorCode)
+
+switch errorCodes {
+case (404, 404):
+    print ("Nie znaleziono elementów")
+case (404, _):
+    print("Nie znaleziono pierwszego elementu")
+case (_, 404):
+    print("Nie znaleziono drugirgo elementu")
+    
+default:
+    print("Znaleziono wszystkie elementy")
+}
+print(error)
