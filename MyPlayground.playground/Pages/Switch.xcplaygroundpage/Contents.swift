@@ -102,3 +102,7 @@ default:
     print("Znaleziono wszystkie elementy")
 }
 print(error)
+ let age = 25
+if case 18...35 = age{
+    print("Doskonały zakres demograficzny")
+}
