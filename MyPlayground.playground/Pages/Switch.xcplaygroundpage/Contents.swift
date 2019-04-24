@@ -64,7 +64,7 @@ import Cocoa
 //print(errorString)
 
 
-var statusCode: Int = 303
+var statusCode: Int = 03
 var errorString: String = "Żądanie zakończyło się niepowodzeniem z podowu: "
 switch statusCode {
 case 100, 101:
@@ -103,6 +103,6 @@ default:
 }
 print(error)
  let age = 25
-if case 18...35 = age{
-     print("Doskonały zakres demograficzny")
+if case 18...35 = age, age >= 21{
+     print("Doskonały zakres demograficzny i masz już przynajmniej 21 lat")
 }
