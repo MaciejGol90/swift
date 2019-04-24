@@ -4,5 +4,6 @@
         <page name='Virable'/>
         <page name='Conditionals'/>
         <page name='Numbers'/>
+        <page name='Switch'/>
     </pages>
 </playground>
