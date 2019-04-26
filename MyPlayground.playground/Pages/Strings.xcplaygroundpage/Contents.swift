@@ -49,7 +49,6 @@ let u = "\u{0080}"
 ////let convertedW = W.unicodeScalars
 let stringsBrownMedal = t + e + m
 print(stringsBrownMedal)
-print(\u{0081} + \u{0069} + \u{0079} + \u{0061})
 
 
 
