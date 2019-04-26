@@ -41,15 +41,14 @@ let m = "\u{0073}"
 let n = "\u{0074}"
 let o = "\u{0075}"
 let p = "\u{0076}"
-let r = "\u{0077}"
+let w = "\u{0077}"
 let s = "\u{0078}"
 let t = "\u{0079}"
 let u = "\u{0080}"
-let w = "\u{0081}"
+
 ////let convertedW = W.unicodeScalars
-//let stringsBrownMedal = ""
-//print(stringsBrownMedal)
-print(j.unicodeScalars)
+let stringsBrownMedal = t + e + m
+print(stringsBrownMedal)
 print(\u{0081} + \u{0069} + \u{0079} + \u{0061})
 
 
