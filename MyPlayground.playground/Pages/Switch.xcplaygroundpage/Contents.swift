@@ -106,3 +106,19 @@ print(error)
 if case 18...35 = age, age >= 21{
      print("Doskonały zakres demograficzny i masz już przynajmniej 21 lat")
 }
+
+let zjedzoneKalorie  = 2500
+let zakresKaloryczny = zjedzoneKalorie
+
+switch zakresKaloryczny {
+case (0...1500):
+    print("Zjadłeś dzisiaj za mało to może być szkodliwe dla Twojego zdrowia")
+case (1500...2000):
+    print("Dzisiaj nie zjadłeś zbyt wiele ale jest OK")
+case (2000...3500):
+    print("Jesteś w dobrym zakresie ")
+case (3500...10000):
+    print("O Panie zgrubniesz i nie zmiścisz sie w spodnie")
+default:
+    print("Przyznaj sie ile dzisiaj kalorii zjadłeś?")
+}
