@@ -8,5 +8,6 @@
         <page name='Loops'/>
         <page name='Strings'/>
         <page name='Optionals'/>
+        <page name='Table'/>
     </pages>
 </playground>
