@@ -1,4 +1,7 @@
 import Cocoa
 
-var movirRatings = ["Hotel Transylwania" : 8, "Zwierzogród" : 8, "Avengers End Game": 11]
-
+var movieRatings = ["Hotel Transylwania" : 8, "Zwierzogród" : 8, "Avengers End Game": 11]
+print("Oceniłem \(movieRatings.count) filmy")
+let hotelTransylwaniaRating = movieRatings["Hotel Transylwania"]
+movieRatings ["Zwierzogróg"] = 9
+movieRatings
